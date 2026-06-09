@@ -1,0 +1,17 @@
+body{
+	font-family: Arial;
+	text-align: center;
+	margin-top: 100px;
+	background: red;
+	color: blue;
+}
+button{
+	font-family: Arial;
+	text-align: center;
+	cursor; pointer;
+}
+p{
+	font-size: 24px;
+	margin-top: 20px;
+	transition: 0.3;
+}
