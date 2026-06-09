@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TERVEHDYS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>TERVEHDYS</h1>
+<button onclick="arvotervehdys()">ARVO tervehdys</button>
+<p id="tulos"></p>
+<script>
+function arvotervehdys() {
+	const tervehdykset = [
+		"Hei!", "Moikka!", "Terve!", "Moro!", "Hyvää päivää!"
+	];
+	const värit = ["red", "lightgreen", "yellow", "cyan", "orange"];
+	document.getElementById("tulos").style.color = värit[Math.floor(Math.random() * värit.length)];                      
+	const satunnainen = tervehdykset[Math.floor(Math.random() * tervehdykset.length)];
+	document.getElementById("tulos").innerText = satunnainen;
+}
+</script>
+</body>
+</html>
